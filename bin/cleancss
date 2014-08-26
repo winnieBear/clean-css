@@ -28,6 +28,7 @@ commands
   .option('--rounding-precision [value]', 'Rounding precision, defaults to 2', parseInt)
   .option('-c, --compatibility [ie7|ie8]', 'Force compatibility mode')
   .option('-t, --timeout [seconds]', 'Per connection timeout when fetching remote @imports (defaults to 5 seconds)')
+  .option('--simple', 'the most simple compress,only remove space, tab,carriage return and comments')
   .option('-d, --debug', 'Shows debug information (minification time & compression efficiency)');
 
 commands.on('--help', function() {
@@ -86,6 +87,8 @@ if (commands.debug)
   cleanOptions.debug = true;
 if (commands.timeout)
   cleanOptions.inliner = { timeout: parseFloat(commands.timeout) * 1000 };
+if(commands.simple)
+  cleanOptions.simple = true;
 if (commands.args.length > 0) {
   var relativeTo = (cleanOptions.noRebase ? false : cleanOptions.root) || commands.args[0];
   cleanOptions.relativeTo = path.dirname(path.resolve(relativeTo));
