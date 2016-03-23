@@ -1,20 +1,20 @@
 {
-  "name": "clean-css",
+  "name": "wb-clean-css",
   "version": "2.2.14",
-  "author": "Jakub Pawlowicz <contact@jakubpawlowicz.com> (http://twitter.com/jakubpawlowicz)",
-  "description": "A well-tested CSS minifier",
+  "author": "fengyang321@gmail.com",
+  "description": "modified based on Jakub Pawlowicz <contact@jakubpawlowicz.com>'s clean-css",
   "license": "MIT",
   "keywords": [
     "css",
     "minifier"
   ],
-  "homepage": "https://github.com/jakubpawlowicz/clean-css",
+  "homepage": "https://github.com/winnieBear/wb-clean-css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakubpawlowicz/clean-css.git"
+    "url": "https://github.com/winnieBear/wb-clean-css.git"
   },
   "bugs": {
-    "url": "https://github.com/jakubpawlowicz/clean-css/issues"
+    "url": "https://github.com/winnieBear/wb-clean-css/issues"
   },
   "bin": {
     "cleancss": "./bin/cleancss"
